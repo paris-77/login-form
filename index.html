@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="progress-container">
+        <div class="progress">
+            <div class="percent"></div>
+        </div>
+        <ul class="steps">
+            <li class="step completed" id="0"></li>
+            <li class="step" id="1"></li>
+            <li class="step" id="2"></li>
+            <!-- <li class="step" id="3"></li> -->
+        </ul>
+    </div>
+    <form onsubmit="event.preventDefault()">
+        <fieldset id="field-0" class="field active">
+            <h2 class="title">personal information</h2>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="date" name="birth" id="birthday">
+            <input type="tel" name="phone" id="phone" placeholder="phone">
+            <button class="next">Next</button>
+        </fieldset>
+        <fieldset id="field-1" class="field ">
+            <h2 class="title">account information</h2>
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="password" name="password" id="password" placeholder="password">
+            <input type="Password" name="confirmPass" id="confirmPass" placeholder="Password">
+            <button class="prev">Previous</button>
+            <button class="next">Next</button>
+        </fieldset>
+        <fieldset id="field-2" class="field ">
+            <h2 class="title">social media</h2>
+            <input type="text" placeholder="Twitter">
+            <input type="text" placeholder="Instagram">
+            <input type="text" placeholder="Dribbble">
+            <button class="prev">Previous</button>
+            <button class="submit">Submit</button>
+        </fieldset>
+        <fieldset id="field-3" class="field ">
+            <h2 class="title">Done</h2>
+        </fieldset>
+    </form>
+    <script src="scripts.js"></script>
+</body>
+</html>
